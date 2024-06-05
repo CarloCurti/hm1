@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#img-header{
+    width: 300px;
+    height: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+    font: 1000 2.1rem / 0.6 "Roboto", Arial, sans-serif;
+}
+
+h3{
+    font: 1000 1.5rem / 0.8 "Roboto", Arial, sans-serif;
+}
+
+h4{
+    font: 1000 1.5rem / 0.8 "Roboto", Arial, sans-serif;
+}
+
+input{
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+input:hover{
+    opacity: 0.5;   
+}
+
+label{
+    font: 700 0.875rem / 1.2 "Roboto", Arial, sans-serif;
+}
+
+#dettagli{
+    margin: auto; 
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+}
+
+#identità{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#nome{
+    width: 285px;
+    margin-left: 15px;
+}
+
+#id-cognome{
+    margin-left: 100px;
+}
+
+#cognome{
+    width: 285px;
+    margin-left: 15px;
+}
+
+#identità1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+#id-cod{
+    display: flex;
+    justify-content: left;
+}
+
+#codice_postale{
+    width: 229px;
+    margin-left: 15px;
+}
+
+#data{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+#giorno{
+    width: 70px;
+    margin-right: 6px;
+    margin-left: 15px;
+}
+
+#mese{
+    width: 70px;
+    margin-right: 6px;
+}
+
+#anno{
+    width: 104px;
+}
+
+select{
+    display: flex;
+    justify-content: left;
+    width: 338px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+#credenziali{
+    margin: auto;
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+}
+
+#cred1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#email{
+    margin-left: 15px;
+    width: 300px;
+}
+
+#cred1-pass{
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#password{
+    margin-left: 15px;
+    width: 285px;
+}
+
+#pass_nascosta{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+#pass_nascosta_conf {
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#conferma_password {
+    margin-right: 5px;
+    width: 285px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#pass_nascosta_conf{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+#opzioni {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#opzioni div {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    margin-bottom: 10px;
+}
+
+.op{
+    height: 20px; 
+    width: 20px;
+}
+
+button{
+    margin-top: 30px;
+    height: 44px;
+    width: 133px;
+    display: block;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    font-size: bold;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+#link-login{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+
+#link-login:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    height: 200px;
+}
+
+#contenitore-bottoni-footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+
+.button-mobile{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-footer {
+    text-align: center;
+    background-color: #0e1111;
+    border-radius: 2px;
+    height: 90px;
+    width: 275px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 40px;
+}
+
+@media (max-width: 1440px) {
+
+    .link-footer {
+        width: 225px;
+    }
+
+}
+
+@media (max-width: 1210px) {
+
+    footer {
+        height: 220px;
+    }
+
+    #contenitore-bottoni-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .button-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    }
+
+    .link-footer {
+    height: 70px;
+    width: 200px;
+    margin: 0 25px; 
+    }
+}
+
+@media (max-width: 850px){
+                
+    body{
+        max-width: 850px;
+        width: 100%;
+    }
+
+    #img-header{
+        width: 200px;
+        height: 40px;
+    }
+
+    #dettagli{
+        max-width: 850px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #identità{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #id-cognome{
+        margin-top: 10px;
+        margin-left: -23px;
+    }
+
+    #identità1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #id-cod{
+        margin-left: -113px;
+        margin-bottom: 10px;
+    }
+
+    #data{
+        margin-left: -85px;
+    }
+
+    select{
+        display: inline-block;
+        vertical-align: middle;
+        width: 285px;
+        margin-left: 55px;
+    }
+
+    #cred1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cred1-pass{
+        margin-top: 10px;
+        margin-left: 39px;
+    }
+
+    #pass_nascosta{
+        margin-left: 12px;
+    }
+
+    #confpass-mobile{
+        margin-left: -24px;
+    }
+
+    #button-mobile{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #opzioni{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    #opzioni div {
+        width: 100%;
+        max-width: 300px;
+        white-space: normal; 
+        margin-bottom: 10px;
+    }
+
+    #opzioni input[type="checkbox"] {
+        width: 20px; 
+        height: 20px; 
+        transform: scale(1.5); 
+        margin-right: 10px; 
+    }
+
+    footer {
+        height: 220px;
+    }
+
+    #contenitore-bottoni-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; 
+        margin-top: 10px;
+    }
+
+    .link-footer {
+        margin: 0 5px; 
+    }
+}
+
+@media (max-width: 426px) {
+
+    .link-footer {
+        height: 50px;
+        width: 140px;
+    }
+
+}
